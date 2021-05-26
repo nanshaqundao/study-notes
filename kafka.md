@@ -236,3 +236,15 @@ the parameters that changing take effect without restarting brokers
 
 
 
+## MirrorMaker
+
+to resolve the issue of sync cluster between different data centers
+
+### alternative tools
+
+- uReplicator - Uber
+- Brooklin Mirror Maker - Linkedin
+- Replicator - Confluent *
+
+
+
