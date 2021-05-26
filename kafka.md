@@ -129,3 +129,66 @@ the maximum lag follower can fall behind the leader = replica.lag.time.max.ms
 
 #### Stable
 
+## Kafka主题管理
+
+### 增删改查
+
+- create: Kafka-topics scripts
+
+  ```shell
+  
+  bin/kafka-topics.sh --bootstrap-server broker_host:port --create --topic my_topic_name  --partitions 1 --replication-factor 1
+  ```
+
+- delete: note it is async action
+
+  ```shell
+  
+  bin/kafka-topics.sh --bootstrap-server broker_host:port --delete  --topic <topic_name>
+  ```
+
+  
+
+- modify: multiple category
+
+  - topic partitions: you can only increase the partition with ***kafka-topics*** scripts
+
+    ```shell
+    
+    bin/kafka-topics.sh --bootstrap-server broker_host:port --alter --topic <topic_name> --partitions <新分区数>
+    ```
+
+    
+
+  - topic param, 
+
+    ```shell
+    
+    bin/kafka-configs.sh --zookeeper zookeeper_host:port --entity-type topics --entity-name <topic_name> --alter --add-config max.message.bytes=10485760
+    ```
+
+    
+
+  - replica param
+
+    use ***kafka-reassign-partitions***
+
+  - bandwidth
+
+  - partition location migration
+
+- read
+
+  ```shell
+  bin/kafka-topics.sh --bootstrap-server broker_host:port --list
+  ```
+
+### internal topics
+
+- _consumer_offsets
+- _transaction_state
+
+### common error
+
+- delete failure
+- _consumer_offsets taking too much space
