@@ -228,3 +228,11 @@ the parameters that changing take effect without restarting brokers
 
 <img src="https://static001.geekbang.org/resource/image/ac/6a/ac093597e8dbef3b1f832f24c125fc6a.jpg" alt="img" style="zoom:25%;" />
 
+
+
+## Kafka Authentication
+
+<img src="https://static001.geekbang.org/resource/image/4a/3d/4a52c2eb1ae631697b5ec3d298f7333d.jpg" alt="img" style="zoom:33%;" />
+
+
+
