@@ -222,3 +222,9 @@ the parameters that changing take effect without restarting brokers
 - ssl.key.password
 - num.replica.fetchers
 
+
+
+## reset consumer offset
+
+<img src="https://static001.geekbang.org/resource/image/ac/6a/ac093597e8dbef3b1f832f24c125fc6a.jpg" alt="img" style="zoom:25%;" />
+
