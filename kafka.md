@@ -192,3 +192,33 @@ the maximum lag follower can fall behind the leader = replica.lag.time.max.ms
 
 - delete failure
 - _consumer_offsets taking too much space
+
+
+
+## Dynamic Parameter
+
+### background
+
+the parameter changes in server.property file will not be effective until Broker is restarted, this is heavy cost.
+
+### definition
+
+the parameters that changing take effect without restarting brokers
+
+### common use cases
+
+- adjust size of threadpool on Broker to deal with volatile throughput
+- adjust connection and security config
+- adjust expiry info for ssl
+- adjust performance of Compact Operation
+- adjust JMS metric
+
+### common used params
+
+- log.retention.ms
+- num.io.threads
+- num.network.threads
+- ssl.keystore.type/location/password
+- ssl.key.password
+- num.replica.fetchers
+
