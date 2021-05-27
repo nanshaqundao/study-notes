@@ -248,3 +248,11 @@ to resolve the issue of sync cluster between different data centers
 
 
 
+## Kafka Monitoring
+
+- 主机监控
+- JVM监控
+- 集群监控
+
+
+
